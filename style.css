@@ -1,0 +1,82 @@
+* {
+  margin: 0%;
+}
+
+html,
+body {
+  --grey: hsl(240, 9%, 89%);
+  --black: hsl(240, 6%, 13%);
+  height: 100%;
+}
+
+body {
+  display: grid; /*O grid me permite trabalhar melhor os layouts para mobile, web ou outros*/
+  place-items: center; /*Só funciona o place-items por causa do display grid*/
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  background-image: url(/Projeto/Mobile.jpg);
+  width: 375px;
+  height: 812px;
+}
+
+.container {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: var(--grey);
+}
+
+.avatar {
+  width: 10rem;
+  margin: 11.5rem auto 0;
+
+  position: relative; /*Deixar o avartar relativo da a margem pro selo absoluto se guiar por ela*/
+}
+
+.avatar span {
+  position: absolute; /* retirou o selo do mesmo nivel do avatar*/
+  top: -15px;
+  z-index: 1; /*Z é o eixo de profundidade, esse código coloca o selo acima do avatar*/
+}
+
+.avatar > img {
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover; /*A imagem fica enquadrada na largura e altura informado acima sem distorcer*/
+
+  clip-path: polygon(50% 0, 100% 27%, 100% 76%, 50% 100%, 0 76%, 0 27%);
+}
+
+h1 {
+  font-size: 1.5rem;
+
+  margin-top: 1.5rem;
+}
+
+a {
+  color: var(--grey);
+  text-decoration: none;
+  margin-top: 0.25rem;
+
+  display: flex; /*Essa parte de baixo foi para separar a img do github do texto*/
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-top: 2rem;
+}
+
+ul {
+  margin-top: 4rem;
+  list-style: none; /*Tira a marcação de bolinhas da lista*/
+  padding: 0;
+  display: flex;
+  gap: 0.5rem; /*espaço entre os intens da lista*/
+  justify-content: center; /*Quando uso o display flex eu utilizo o justify-contant, se fosse outro display nao usaria o justify*/
+}
