@@ -3,7 +3,7 @@ const linksSocialMedia = {
   youtube: "maykbrito",
   facebook: "caroldelira",
   instagram: "deliracarol",
-  twitter: "caroldelira",
+  twitter: "caroldelira_",
 };
 
 function changeSocialMediaLinks() {
