@@ -30,16 +30,3 @@ function getGitHubProfileInfos() {
 }
 
 getGitHubProfileInfos();
-
-//ARROW FUNCTIONS
-/*function nomedafuncao(argumentos){
-codigo
-}
-
-função anônima:
-
-argumento => {
-
-}
-retira o nome da função e coloca apenas os argumentos
-*/
